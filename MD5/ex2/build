@@ -1,0 +1,19 @@
+docker build -f Dockerfile . -t md5-crack-ex2
+docker tag md5-crack-ex2:latest docker.io/mazurkatarzyna/md5-crack-ex2:latest
+docker push docker.io/mazurkatarzyna/md5-crack-ex2:latest
+docker run -p 4002:4002 docker.io/mazurkatarzyna/md5-crack-ex2:latest
+ 
+docker tag docker.io/mazurkatarzyna/md5-crack-ex2:latest ghcr.io/mazurkatarzynaumcs/md5-crack-ex2:latest
+docker push ghcr.io/mazurkatarzynaumcs/md5-crack-ex2:latest
+docker run -p 4002:4002 ghcr.io/mazurkatarzynaumcs/md5-crack-ex2:latest
+
+docker build -f Dockerfile . -t md5-crack-ex2
+docker tag md5-crack-ex2:latest mazurkatarzyna/md5-crack-ex2:latest
+docker push mazurkatarzyna/md5-crack-ex2:latest
+docker tag docker.io/mazurkatarzyna/md5-crack-ex2:latest ghcr.io/mazurkatarzynaumcs/md5-crack-ex2:latest
+docker push ghcr.io/mazurkatarzynaumcs/md5-crack-ex2:latest
+docker run -p 4002:4002 ghcr.io/mazurkatarzynaumcs/md5-crack-ex2:latest
+
+docker build -f Dockerfile . -t md5-crack-ex2:latest
+docker tag md5-crack-ex2:latest ghcr.io/katarzynamazur/md5-crack-ex2:latest
+docker push ghcr.io/katarzynamazur/md5-crack-ex2:latest
