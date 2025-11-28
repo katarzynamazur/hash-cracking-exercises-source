@@ -447,8 +447,8 @@ def index():
                     </p>
                     <div class="code-block">
                         <code># Example usage<br>
-curl http://localhost:4002/hash<br>
-curl -X POST http://localhost:4002/submit -H "Content-Type: application/json" -d '{"word":"python"}'
+curl http://localhost:4003/hash<br>
+curl -X POST http://localhost:4003/submit -H "Content-Type: application/json" -d '{"word":"python"}'
                         </code>
                     </div>
                 </div>
@@ -512,4 +512,4 @@ def internal_error(error):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=4002)
+    app.run(debug=True, host="0.0.0.0", port=4003)
